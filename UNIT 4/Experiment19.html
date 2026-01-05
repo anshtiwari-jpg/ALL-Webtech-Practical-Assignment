@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canvas Drawing by Ansh Tiwari (IBM)</title>
+</head>
+<body>
+
+<h3>Canvas Rare Shapes – Made by Ansh Tiwari (IBM)</h3>
+
+<canvas id="myCanvas" width="400" height="300" style="border:1px solid black;"></canvas>
+
+<script>
+// Canvas Drawing by Ansh Tiwari (IBM)
+let c = document.getElementById("myCanvas");
+let ctx = c.getContext("2d");
+
+
+// ⭐ STAR Shape
+ctx.beginPath();
+ctx.moveTo(80, 40);
+ctx.lineTo(90, 70);
+ctx.lineTo(120, 70);
+ctx.lineTo(95, 90);
+ctx.lineTo(105, 120);
+ctx.lineTo(80, 100);
+ctx.lineTo(55, 120);
+ctx.lineTo(65, 90);
+ctx.lineTo(40, 70);
+ctx.lineTo(70, 70);
+ctx.closePath();
+ctx.fillStyle = "gold";
+ctx.fill();
+ctx.stroke();
+
+
+// ⬢ HEXAGON Shape
+ctx.beginPath();
+ctx.moveTo(250, 40);
+ctx.lineTo(290, 60);
+ctx.lineTo(290, 100);
+ctx.lineTo(250, 120);
+ctx.lineTo(210, 100);
+ctx.lineTo(210, 60);
+ctx.closePath();
+ctx.fillStyle = "lightcoral";
+ctx.fill();
+ctx.stroke();
+
+
+// ◆ RHOMBUS Shape
+ctx.beginPath();
+ctx.moveTo(200, 180); // top
+ctx.lineTo(240, 210); // right
+ctx.lineTo(200, 240); // bottom
+ctx.lineTo(160, 210); // left
+ctx.closePath();
+ctx.fillStyle = "lightgreen";
+ctx.fill();
+ctx.stroke();
+
+
+// ~~~ WAVE Curve (Rare)
+ctx.beginPath();
+ctx.moveTo(20, 200);
+ctx.quadraticCurveTo(70, 150, 120, 200);
+ctx.quadraticCurveTo(170, 250, 220, 200);
+ctx.quadraticCurveTo(270, 150, 320, 200);
+ctx.stroke();
+
+
+// ZIG-ZAG Line (Rare)
+ctx.beginPath();
+ctx.moveTo(20, 260);
+ctx.lineTo(50, 230);
+ctx.lineTo(80, 260);
+ctx.lineTo(110, 230);
+ctx.lineTo(140, 260);
+ctx.lineTo(170, 230);
+ctx.lineTo(200, 260);
+ctx.stroke();
+
+</script>
+
+</body>
+</html>

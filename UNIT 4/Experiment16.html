@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Show/Hide Example - Ansh Tiwari (IBM)</title>
+
+<style>
+.hidden {
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<p id="para">This paragraph can be shown or hidden. Code by Ansh Tiwari (IBM)</p>
+
+<button onclick="togglePara()">Show / Hide</button>
+
+<script>
+function togglePara() {
+    let p = document.getElementById("para");
+    p.classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>
