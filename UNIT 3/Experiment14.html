@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation by Ansh Tiwari (IBM)</title>
+</head>
+<body>
+
+<h3>Simple Form Validation - Created by Ansh Tiwari (IBM)</h3>
+
+<form onsubmit="return validateForm()">
+    <label>Name:</label>
+    <input type="text" id="username" oninput="clearMessage()">
+    <p id="msg" style="color:red;"></p>
+    <br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+
+function validateForm() {
+    let name = document.getElementById("username").value;
+
+    if (name.trim() === "") {
+        alert("Fill your name!");
+        return false;
+    }-
+    alert("Form submitted successfully!");
+    return true;
+}
+
+function clearMessage() {
+    document.getElementById("msg").textContent = "";
+}
+</script>
+</body>
+</html>
